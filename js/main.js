@@ -78,21 +78,3 @@ function DrawCircle( x, y, d, c, s ) {
       }
   }
   
-
-function keyPressed() {
-	if (keyCode === 39) {
-		game.player.jump()
-	}
-}
-
-
-
-
-
-
-
-
-
-
-
-
