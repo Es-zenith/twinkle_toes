@@ -1,7 +1,7 @@
 class Player {
 	constructor() {
-		this.width = 500
-		this.height = 400
+		this.width = 250
+		this.height = 175
 		this.x = 250
 		this.y = 300
 		this.gravity = 0.2
@@ -32,17 +32,16 @@ class Player {
 		if (this.x <= -200) {
 			this.x = -200;
         }
-		if (this.y >= 300) {
-			this.y = 300;
+		if (this.y >= 400) {
+			this.y = 400;
 		}
 		if (this.y <= -100) {
 			this.y = -100;
 		}
 
-
 		image(game.playerImage, this.x, this.y, this.width, this.height)
 
-
+	// to attach unidorn to the mouse;
 
         // let leftWall = 20;
         // let rightWall = 1000;
@@ -54,6 +53,17 @@ class Player {
         // let xc = constrain(mouseX, leftWall, rightWall);
     
         // image(game.playerImage, xc, this.y, this.width, this.height)
+
+	if (game.player.score == 500){
+	document.querySelector("#won").innerText = "YOU WON"
+	clear();
+	noLoop();
+	image(game.playerImage, this.x, this.y, this.width, this.height)
+		
+	}
+
+	
+
         
 	}
     
