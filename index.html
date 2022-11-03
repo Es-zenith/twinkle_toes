@@ -1,32 +1,77 @@
+
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <script src="https://cdn.jsdelivr.net/npm/p5@1.5.0/lib/p5.js"></script>
-    <link rel="stylesheet" href="style.css" />
-    <title>game-project</title>
-  </head>
-  <body>
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+    @import url('https://fonts.googleapis.com/css2?family=Poiret+One&family=Rubik+Dirt&family=Rubik+Moonrocks&display=swap');
 
-    <div>
-      <!-- <h1>Twinkle Toes</h1> -->
+    .landing-page {
+        display: flex;
+        align-items: center;
+        background-image: url(./assets/background-1.png);
+        flex-direction: column;
+        /* flex: 1; */
+        background-repeat: no-repeat;
+        background-size: cover;
+
+    }
+.button {
+   border-top: 1px solid #ffffff;
+   background: #f29eff;
+   background: -webkit-gradient(linear, left top, left bottom, from(#5643c4), to(#f29eff));
+   background: -webkit-linear-gradient(top, #5643c4, #f29eff);
+   background: -moz-linear-gradient(top, #5643c4, #f29eff);
+   background: -ms-linear-gradient(top, #5643c4, #f29eff);
+   background: -o-linear-gradient(top, #5643c4, #f29eff);
+   padding: 11px 22px;
+   -webkit-border-radius: 9px;
+   -moz-border-radius: 9px;
+   border-radius: 20px;
+   color: white;
+   font-size: 24px;
+   font-family: 'Poiret One','Lucida Grande', Helvetica, Arial, Sans-Serif;
+   text-decoration: none;
+   vertical-align: middle;
+   }
+.button:hover {
+   border-top-color: #d90d98;
+   background: #d90d98;
+   color: #fcfcfc;
+   }
+   p {
+    display: inline-table;
+   }
+   h1{
+    font-size: 80px;
+    /* font-family: 'Poiret One', cursive; */
+    /* font-family: 'Rubik Moonrocks'; */
+    font-family: 'Rubik Dirt', cursive;
+    font-weight: 200;
+    color: #d90d98;
+   }
+   
+
+    </style>
+<title>Twinkle-Toes</title>
+</head>
+<body>
+    <!-- <img src="./assets/background_2.png" alt="game picture" width="1000px"> -->
+    
+    <div class="landing-page">
+        <h1>Twinkle Toes</h1>
+        <div>
+            <p></p><a class="button" href="#">  Instructions  </a></p> 
+            <p></p><a class="button" href="start.html">  START  </a></p> 
+         </div>
+        
+        <img src="./assets/unicorn-2.png" alt="unicorn" width="400px">
+        
     </div>
-
-    <div>
-      <p id="total-value">Score : <span>0</span></p>
-      <p id="won"><span></span></p>
-      <p id="lives">Lives : <span></span>🦄🦄🦄🦄🦄</p>
-      <p id="lose"><span></span></p>
-
-    </div>
-     
-    <script src="./js/obstaclesTwo.js"></script>
-    <script src="./js/obstacle.js"></script>
-    <script src="./js/player.js"></script>
-    <script src="./js/game.js"></script>
-    <script src="./js/main.js"></script>
-    <script src="./js/background.js"></script>
-  </body>
+    
+    
+    
+</body>
 </html>

@@ -2,6 +2,7 @@ var circles = [];
 let backgroundSky;
 let sparkleSky;
 let rainbow;
+let beat = new Audio('/path/to/my/beat.mp3');
 
 const game = new Game()
 
