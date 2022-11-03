@@ -8,7 +8,7 @@ class ObstacleTwo {
 	}
 
 	draw() {
-		this.y++
+		this.y += 2
 		image(this.image, this.x, this.y, this.width, this.height)
 		
 	}
@@ -29,7 +29,7 @@ class ObstacleTwo {
 			return false
 		} else {
 			// Increment the score
-			game.player.score+= 100
+			game.player.score+= 50
 			document.querySelector("#total-value span").innerText = game.player.score
 			return true
 		}

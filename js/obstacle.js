@@ -5,6 +5,7 @@ class Obstacle {
 		this.y = 15
 		this.width = 30
 		this.height = 30
+		this.snd = new Audio('assets/collision.wav'); // buffers automatically when created
 	}
 
 	draw() {
@@ -30,6 +31,7 @@ class Obstacle {
 		} else {
 			// Increment the score
 			game.player.score+= 100
+			this.snd.play()
 			document.querySelector("#total-value span").innerText = game.player.score
 			return true
 		}

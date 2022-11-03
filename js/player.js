@@ -8,7 +8,7 @@ class Player {
 		this.velocity = 0
 		this.score = 0
 		this.step = 5
-		this.lives = 2
+		this.lives = 5
 	}
 
 	draw() {
@@ -56,7 +56,7 @@ class Player {
         // image(game.playerImage, xc, this.y, this.width, this.height)
 	
 
-	if (game.player.score == 200){
+	if (game.player.score >= 500){
 	document.querySelector("#won").innerText = "🌈🍭 YOU WON 🌈🍭"
 	clear();
 	noLoop();
@@ -67,11 +67,11 @@ class Player {
 
 	if (game.player.lives === 0){
 		document.querySelector("#lose").innerText = "YOU LOSER!!"
-		noLoop();
 		clear();
+		noLoop();
+		game.obstacles = []
 		background(169, 169, 169);
 		image(game.loserPlayer, 300, 200, 400, 400);
-			
 		}
         
 	}

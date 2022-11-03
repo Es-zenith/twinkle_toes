@@ -3,8 +3,8 @@ class Game{
         this.obstacles = []
         this.obstaclesTwo = []
         this.coinImage
+        this.candyImage
         this.player = new Player()
-          
       }
   
     preload() {
@@ -16,19 +16,24 @@ class Game{
   
     }
     draw() {
-
         this.player.draw()
-  
-          // Every x frames we want to push a new coin into the array 
-          if (frameCount % 100 === 0) {
-              this.obstacles.push(new Obstacle(this.coinImage))
-    
+        // Every x frames we want to push a new coin into the array 
+        if (frameCount % 100 === 0) {
+            if (this.player.score < 300){
+                this.obstacles.push(new Obstacle(this.coinImage))
+            }
+            else{
+                this.obstacles.push(new Obstacle(this.coinImage))
+                this.obstacles.push(new ObstacleTwo(this.candyImage))
+            }
+            
         }
 
-    //Draw the obstacles
+        //Draw the obstacles
 		this.obstacles.forEach(function (obstacle) {
 			obstacle.draw()
 		})
+
 
         // Filter the coins which are out of the canvas or had a collision
 		// We need an arrow function here, so that "this" has the right context (of the game object)
@@ -38,8 +43,9 @@ class Game{
                 return false
 
             } else if(obstacle.y > 600) {
-                document.querySelector("#lives span").innerText = game.player.lives
                 game.player.lives -= 1
+                document.querySelector("#lives span").innerText = '🦄🦄🦄🦄🦄'.substring(0, game.player.lives*2)
+                
             } 
             else {
         
