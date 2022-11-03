@@ -8,7 +8,7 @@ class Player {
 		this.velocity = 0
 		this.score = 0
 		this.step = 5
-		this.lives = 7
+		this.lives = 2
 	}
 
 	draw() {
@@ -56,8 +56,8 @@ class Player {
         // image(game.playerImage, xc, this.y, this.width, this.height)
 	
 
-	if (game.player.score == 1200){
-	document.querySelector("#won").innerText = "YOU WON"
+	if (game.player.score == 200){
+	document.querySelector("#won").innerText = "🌈🍭 YOU WON 🌈🍭"
 	clear();
 	noLoop();
 	background(248, 200, 220);

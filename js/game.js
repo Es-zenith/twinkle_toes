@@ -39,7 +39,7 @@ class Game{
 
             } else if(obstacle.y > 600) {
                 document.querySelector("#lives span").innerText = game.player.lives
-                game.player.lives-= 1
+                game.player.lives -= 1
             } 
             else {
         
