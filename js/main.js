@@ -27,12 +27,7 @@ function setup() {
 }
 
 function draw() {
-  
-  // for sparkleing clouds
-  
-  
   clear()
-  // for moving things in sky 
 
   // image(rainbow, 0, 0, 1000, 600)
   

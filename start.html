@@ -5,14 +5,54 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <style>
-        .landing-page {
+    @import url('https://fonts.googleapis.com/css2?family=Poiret+One&family=Rubik+Dirt&family=Rubik+Moonrocks&display=swap');
+
+    .landing-page {
         display: flex;
-        background-image: url(./assets/background_2.png);
         align-items: center;
+        background-image: url(./assets/background-1.png);
         flex-direction: column;
-        flex-wrap: wrap;
+        /* flex: 1; */
+        background-repeat: no-repeat;
+        background-size: cover;
 
     }
+.button {
+   border-top: 1px solid #ffffff;
+   background: #f29eff;
+   background: -webkit-gradient(linear, left top, left bottom, from(#5643c4), to(#f29eff));
+   background: -webkit-linear-gradient(top, #5643c4, #f29eff);
+   background: -moz-linear-gradient(top, #5643c4, #f29eff);
+   background: -ms-linear-gradient(top, #5643c4, #f29eff);
+   background: -o-linear-gradient(top, #5643c4, #f29eff);
+   padding: 11px 22px;
+   -webkit-border-radius: 9px;
+   -moz-border-radius: 9px;
+   border-radius: 20px;
+   color: white;
+   font-size: 24px;
+   font-family: 'Lucida Grande', Helvetica, Arial, Sans-Serif;
+   text-decoration: none;
+   vertical-align: middle;
+   }
+.button:hover {
+   border-top-color: #d90d98;
+   background: #d90d98;
+   color: #fcfcfc;
+   }
+   p {
+    display: inline-table;
+   }
+   h1{
+    font-size: 80px;
+    /* font-family: 'Poiret One', cursive; */
+    /* font-family: 'Rubik Moonrocks'; */
+    font-family: 'Rubik Dirt', cursive;
+    font-weight: 200;
+    color: #d90d98;
+   }
+   
+
     </style>
     <title>Twinkle-Toes</title>
 </head>
@@ -21,9 +61,15 @@
     
     <div class="landing-page">
         <h1>Twinkle Toes</h1>
-        <img src="./assets/unicorn.png" alt="unicorn" width="100px">
-        <button><a href="index.html">Start the Game</a></button> 
+        <div>
+            <p></p><a class="button" href="#">  Instructions  </a></p> 
+            <p></p><a class="button" href="index.html">  START  </a></p> 
+         </div>
+        
+        <img src="./assets/unicorn-2.png" alt="unicorn" width="400px">
+        
     </div>
+    
     
     
 </body>

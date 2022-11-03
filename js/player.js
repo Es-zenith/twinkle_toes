@@ -8,6 +8,7 @@ class Player {
 		this.velocity = 0
 		this.score = 0
 		this.step = 5
+		this.lives = 7
 	}
 
 	draw() {
@@ -53,17 +54,25 @@ class Player {
         // let xc = constrain(mouseX, leftWall, rightWall);
     
         // image(game.playerImage, xc, this.y, this.width, this.height)
+	
 
-	if (game.player.score == 500){
+	if (game.player.score == 1200){
 	document.querySelector("#won").innerText = "YOU WON"
 	clear();
 	noLoop();
-	image(game.playerImage, this.x, this.y, this.width, this.height)
+	background(248, 200, 220);
+	image(game.winnerPlayer, 200, 200, 600, 400);
 		
 	}
 
-	
-
+	if (game.player.lives === 0){
+		document.querySelector("#lose").innerText = "YOU LOSER!!"
+		noLoop();
+		clear();
+		background(169, 169, 169);
+		image(game.loserPlayer, 300, 200, 400, 400);
+			
+		}
         
 	}
     
