@@ -57,24 +57,24 @@
         color:#790654;
         
     }
-    ul {
-        padding: 20px;
-    }
-   
+    .hidden {
+        visibility: hidden;
+    }  
 
 </style>
+
 <title>Twinkle-Toes</title>
 </head>
-<body>
+<body>  
     <!-- <img src="./assets/background_2.png" alt="game picture" width="1000px"> -->
     
     <div class="landing-page">
         <h1>Twinkle Toes</h1>
        
         <div>
-            <p></p><a class="button" href="#">  Instructions  </a></p> 
+            <p></p><a id="myBtn" class="button" href="#">  Instructions  </a></p> 
             <p></p><a class="button" href="start.html">  START GAME </a></p> 
-            <ul>
+            <ul class="hidden">
                 <li>Use arrow ◀️ 🔼 ▶️ keys to move up and jump unicorn.</li>
                 <li>Collect all the hearts ❤️ falling from sky.</li>
                 <li>For every ❤️ that touches the floor player loose one 🦄 life.</li>
@@ -86,14 +86,18 @@
             <img src="./assets/unicorn-2.png" alt="unicorn" width="300px">
             
         </div>
-
-        
-        
+ 
         
         
     </div>
     
-    
+ <script>
+    document.getElementById("myBtn").addEventListener("click", displayInfo);
+
+function displayInfo() {
+    document.querySelector(".hidden").style.visibility = "visible";
+}
+</script>
     
     
 </body>
