@@ -80,23 +80,35 @@
                 <li>For every ❤️ that touches the floor player loose one 🦄 life.</li>
                 <li>Once all 🦄 lives are 0, player lose !⛔️</li>
                 <li>If you reach 600 score, there are extra 🍬 candies to collect.</li>
-                <li>To win player need to score 1300 ✨ </li>
+                <li>To win player need to score 1000 ✨ </li>
                 <li>Go press start the game and have fun 🥳</li>
             </ul>
             <img src="./assets/unicorn-2.png" alt="unicorn" width="300px">
             
         </div>
- 
-        
-        
+    
     </div>
     
  <script>
     document.getElementById("myBtn").addEventListener("click", displayInfo);
 
 function displayInfo() {
-    document.querySelector(".hidden").style.visibility = "visible";
-}
+        (document.querySelector(".hidden").style.visibility === "hidden") ?
+
+        document.querySelector(".hidden").style.visibility = "visible" :
+
+        document.querySelector(".hidden").style.visibility = "hidden"
+    }
+    // if (document.querySelector(".hidden").style.visibility === "hidden") {
+
+    //     document.querySelector(".hidden").style.visibility = "visible";
+
+    // }
+    // else {
+    //     document.querySelector(".hidden").style.visibility = "hidden";
+    // }
+    
+
 </script>
     
     
