@@ -93,20 +93,21 @@
     document.getElementById("myBtn").addEventListener("click", displayInfo);
 
 function displayInfo() {
-        (document.querySelector(".hidden").style.visibility === "hidden") ?
+    //     (document.querySelector(".hidden").style.visibility === "hidden") ?
 
-        document.querySelector(".hidden").style.visibility = "visible" :
+    //     document.querySelector(".hidden").style.visibility = "visible" :
 
-        document.querySelector(".hidden").style.visibility = "hidden"
+    //     document.querySelector(".hidden").style.visibility = "hidden"
+    // }
+    if (document.querySelector(".hidden").style.visibility === "hidden") {
+
+        document.querySelector(".hidden").style.visibility = "visible";
+
     }
-    // if (document.querySelector(".hidden").style.visibility === "hidden") {
-
-    //     document.querySelector(".hidden").style.visibility = "visible";
-
-    // }
-    // else {
-    //     document.querySelector(".hidden").style.visibility = "hidden";
-    // }
+    else {
+        document.querySelector(".hidden").style.visibility = "hidden";
+    }
+}
     
 
 </script>
