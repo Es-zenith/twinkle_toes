@@ -3,8 +3,9 @@ class ObstacleTwo {
 		this.image = image 
 		this.x = (Math.random() * height)
 		this.y = 15
-		this.width = 30
-		this.height = 30
+		this.width = 50
+		this.height = 50
+		this.snd = new Audio('assets/candypop.wav'); // buffers automatically when created
 	}
 
 	draw() {
@@ -30,6 +31,7 @@ class ObstacleTwo {
 		} else {
 			// Increment the score
 			game.player.score+= 50
+			this.snd.play()
 			document.querySelector("#total-value span").innerText = game.player.score
 			return true
 		}

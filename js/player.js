@@ -56,22 +56,24 @@ class Player {
         // image(game.playerImage, xc, this.y, this.width, this.height)
 	
 
-	if (game.player.score >= 500){
+	if (game.player.score >= 1500){
 	document.querySelector("#won").innerText = "🌈🍭 YOU WON 🌈🍭"
 	clear();
 	noLoop();
 	background(248, 200, 220);
 	image(game.winnerPlayer, 200, 200, 600, 400);
+	document.querySelector("#btn").innerHTML = " Start AGAIN"
 		
 	}
 
 	if (game.player.lives === 0){
-		document.querySelector("#lose").innerText = "YOU LOSER!!"
+		document.querySelector("#lose").innerHTML = "YOU  LOSER ‼️"
 		clear();
 		noLoop();
-		game.obstacles = []
+		// game.obstacles = []
 		background(169, 169, 169);
 		image(game.loserPlayer, 300, 200, 400, 400);
+		document.querySelector("#btn").innerHTML = " Start AGAIN"
 		}
         
 	}

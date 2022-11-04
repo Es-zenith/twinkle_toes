@@ -26,7 +26,7 @@ class Obstacle {
 		let playerY = playerInfo.y + playerInfo.height/2 
 		
         // dist(x1, y1, x2, y2) returns the distance between the objects
-		if (dist(obstacleX, obstacleY, playerX, playerY) > 40) {
+		if (dist(obstacleX, obstacleY, playerX, playerY) > 25) {
 			return false
 		} else {
 			// Increment the score

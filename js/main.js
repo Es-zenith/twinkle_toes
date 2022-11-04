@@ -20,7 +20,7 @@ function setup() {
     var x = random(width);
     var y = random(height);
     var d = random(5, 8);
-    var c = color(250);
+    var c = color(232, 248, 245 );
     var s = random(2, 5);
     circles[i] = new DrawCircle(x, y, d, c, s);
   }
