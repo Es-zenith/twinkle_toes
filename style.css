@@ -45,7 +45,7 @@ body {
 #total-value {
   /* color: #d90d98; */
   position: absolute;
-  bottom: 62px; right: 30vh;
+  bottom: 50px; right: 30vh;
 
   background: -webkit-linear-gradient(top, #FF3366  , #b77ec0);
   background: -moz-linear-gradient(top, #5643c4, #f29eff);
@@ -72,7 +72,7 @@ body {
   
     
   position: absolute;
-  bottom: 62px; left: 30vh;
+  bottom: 50px; left: 30vh;
 
 
 }
