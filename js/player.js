@@ -56,7 +56,7 @@ class Player {
         // image(game.playerImage, xc, this.y, this.width, this.height)
 	
 
-	if (game.player.score >= 1000){
+	if (game.player.score >= 1300){
 	document.querySelector("#won").innerText = "🌈🍭 YOU WON 🌈🍭"
 	clear();
 	noLoop();

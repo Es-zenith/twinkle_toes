@@ -18,7 +18,7 @@ class Game{
         this.player.draw()
         // Every x frames we want to push a new coin into the array 
         if (frameCount % 100 === 0){
-            if (this.player.score < 700){
+            if (this.player.score < 800){
                 this.obstacles.push(new Obstacle(this.coinImage))
             }
             else {
